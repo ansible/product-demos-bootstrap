@@ -28,7 +28,7 @@
 
     - name: Execute automation controller resource configuration
       ansible.builtin.include_role:
-        name: infra.controller_configuration.dispatch
+        name: infra.aap_configuration.dispatch
 
     - name: Print user message
       ansible.builtin.debug:
