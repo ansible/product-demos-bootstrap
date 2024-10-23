@@ -7,6 +7,7 @@
     controller_postinstall_repo_ref: main
     controller_postinstall_dir: '{{ playbook_dir }}/product-demos-postinstall'
     controller_postinstall_ignore_files: []
+    controller_dependency_check: false
 
   tasks:
     - name: Check out product-demos-postinstall repo
