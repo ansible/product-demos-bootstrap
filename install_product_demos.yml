@@ -4,7 +4,7 @@
 
   vars:
     controller_postinstall_repo_url: https://github.com/ansible/product-demos-postinstall.git
-    controller_postinstall_repo_ref: main
+    controller_postinstall_repo_ref: jce/default-omit
     controller_postinstall_dir: '{{ playbook_dir }}/product-demos-postinstall'
     controller_postinstall_ignore_files: []
     controller_dependency_check: false
