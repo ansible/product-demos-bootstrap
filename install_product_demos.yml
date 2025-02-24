@@ -3,31 +3,31 @@
   hosts: localhost
 
   vars:
-    controller_postinstall_repo_url: https://github.com/ansible/product-demos-postinstall.git
-    controller_postinstall_repo_ref: main
-    controller_postinstall_dir: '{{ playbook_dir }}/product-demos-postinstall'
-    controller_postinstall_ignore_files: []
+    aap_postinstall_repo_url: https://github.com/ansible/product-demos-postinstall.git
+    aap_postinstall_repo_ref: main
+    aap_postinstall_dir: '{{ playbook_dir }}/product-demos-postinstall'
+    aap_postinstall_ignore_files: []
 
   tasks:
     - name: Check out product-demos-postinstall repo
       ansible.builtin.git:
-        repo: '{{ controller_postinstall_repo_url }}'
-        dest: '{{ controller_postinstall_dir }}'
-        version: '{{ controller_postinstall_repo_ref }}'
+        repo: '{{ aap_postinstall_repo_url }}'
+        dest: '{{ aap_postinstall_dir }}'
+        version: '{{ aap_postinstall_repo_ref }}'
         force: true
 
     - name: Include product-demos-postinstall variables
       ansible.builtin.include_vars:
-        dir: '{{ controller_postinstall_dir }}'
+        dir: '{{ aap_postinstall_dir }}'
         extensions:
           - yml
           - yaml
-        ignore_files: '{{ controller_postinstall_ignore_files }}'
+        ignore_files: '{{ aap_postinstall_ignore_files }}'
         ignore_unknown_extensions: true
 
     - name: Execute automation controller resource configuration
       ansible.builtin.include_role:
-        name: infra.controller_configuration.dispatch
+        name: infra.aap_configuration.dispatch
 
     - name: Print user message
       ansible.builtin.debug:
