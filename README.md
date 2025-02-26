@@ -7,7 +7,7 @@ Bootstrap playbook for adding [Ansible Product Demos](https://github.com/ansible
 Presumably you have already completed this step before arriving here, however you need to install Ansible Automation Platform before you continue.
 
 ### Step 2 - Edit the Demo Project
-1. Login to your Automation Controller as the `admin` user and click on **Projects** in the left hand sidebar.
+1. Login to your Automation Automation Platform as the `admin` user and click on **Projects** in the left hand sidebar.
 2. If you have the **Demo Project** created at installation time:
    1. Click on the **Demo Project** and edit it.
    2. Change the **Source Control URL** to `https://github.com/ansible/product-demos-bootstrap` and save the project.
@@ -19,23 +19,23 @@ Presumably you have already completed this step before arriving here, however yo
    4. In the **Source Control URL** box, use `https://github.com/ansible/product-demos-bootstrap` as the input and save the project.
    5. Make sure the project sync completes.
 
-### Step 3 - Create the Controller Credential
+### Step 3 - Create the AAP Credential
 1. Navigate to the **Credentials** section in the left hand sidebar.
 2. Click the **Add** button at the top of the screen and use the following values to create your credential.
 
 |      |                       |
 |------|-----------------------|
-| Name | 'Controller Credential' |
+| Name | 'AAP Credential' |
 | Organization | **Leave this field blank** |
 | Credential Type | 'Red Hat Ansible Automation Platform' |
-| Red Hat Ansible Automation Platform | *URL of the AAP UI* |
+| Red Hat Ansible Automation Platform | *Ansible Automation Platform URL* |
 | Username | 'admin' |
 | Password | *admin password* |
 
 ### Step 4 - Edit the Demo Job Template
 1. Navigate to the **Templates** section in the left hand sidebar.
 2. Click on the **Demo Job Template** and edit it. Change the **playbook** field to `install_product_demos.yml`. If you do not see this option, go back to step 2 and ensure your project is configured and synced properly.
-3. Click the magnifying glass on the **Credentials** field, change the dropdown in the top right to `Red Hat Ansible Automation Platform` and select `Controller Credential` from the list.
+3. Click the magnifying glass on the **Credentials** field, change the dropdown in the top right to `Red Hat Ansible Automation Platform` and select `AAP Credential` from the list.
 4. Optional variables:
    - To use an alternate branch in the Product Demos repo, define the extra variable `apd_git_repo_branch: <your-branch>`
    - To use the Ansible Automation Platform 2.5 Execution environment, define the extra variable `apd_ee_image_version: 25`
