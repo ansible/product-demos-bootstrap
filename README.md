@@ -1,5 +1,5 @@
 # product-demos-bootstrap
-Bootstrap playbook for adding [Ansible Product Demos](https://github.com/ansible/product-demos) to an existing Ansible Automation Platform environment.
+Bootstrap playbook for adding [Ansible Product Demos](https://github.com/ansible/product-demos) to an existing Ansible Automation Platform (AAP) environment.
 
 ## Using this Repo
 
@@ -26,9 +26,9 @@ Presumably you have already completed this step before arriving here, however yo
 |      |                       |
 |------|-----------------------|
 | Name | 'Controller Credential' |
-| Organization | 'Default' |
+| Organization | _Leave this field blank_ |
 | Credential Type | 'Red Hat Ansible Automation Platform' |
-| Red Hat Ansible Automation Platform | *URL of Controller UI* |
+| Red Hat Ansible Automation Platform | *<URL of the AAP UI>* |
 | Username | 'admin' |
 | Password | *admin password* |
 
