@@ -26,9 +26,9 @@ Presumably you have already completed this step before arriving here, however yo
 |      |                       |
 |------|-----------------------|
 | Name | 'Controller Credential' |
-| Organization | _Leave this field blank_ |
+| Organization | **Leave this field blank** |
 | Credential Type | 'Red Hat Ansible Automation Platform' |
-| Red Hat Ansible Automation Platform | *<URL of the AAP UI>* |
+| Red Hat Ansible Automation Platform | *URL of the AAP UI* |
 | Username | 'admin' |
 | Password | *admin password* |
 
