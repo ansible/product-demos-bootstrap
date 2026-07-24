@@ -1,7 +1,12 @@
 # product-demos-bootstrap
 Bootstrap playbook for adding [Ansible Product Demos](https://github.com/ansible/product-demos) to an existing Ansible Automation Platform environment.
 
-## Using this Repo
+[!CAUTION]
+**This repository is archived and no longer active**
+
+The Ansible Product Demos bootstrap process described here is no longer valid, and the new bootstrap process is documented in the main [Ansible Product Demos](https://github.com/ansible/product-demos) repository.  The content here is preserved for reference only.
+
+## Using this Repo (Deprecated)
 
 ### Step 1 - Install Ansible Automation Platform
 Presumably you have already completed this step before arriving here, however you need to install Ansible Automation Platform before you continue.
