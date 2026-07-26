@@ -34,7 +34,7 @@ Presumably you have already completed this step before arriving here, however yo
 | Name | 'Controller Credential' |
 | Organization | 'Default' |
 | Credential Type | 'Red Hat Ansible Automation Platform' |
-| Red Hat Ansible Automation Platform | *URL of Controller UI* |
+| Red Hat Ansible Automation Platform | *URL of Controller UI* (e.g. https://<controller-host>:8443 for 2.4) |
 | Username | 'admin' |
 | Password | *admin password* |
 
